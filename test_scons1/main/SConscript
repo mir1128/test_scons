@@ -1,0 +1,1 @@
+Object('main.cpp', CPPPATH=['../include', '../xlib/include'], LIB=['add', 'sub'], LIBPATH=['../xlib/lib'])

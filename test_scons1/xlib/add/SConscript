@@ -1,0 +1,3 @@
+libfile = StaticLibrary('add.cpp', CPPPATH = ['../include'])
+libfilename = str(libfile[0])
+Command('../lib/'+ libfilename, libfilename, Copy("$TARGET", "$SOURCE"))

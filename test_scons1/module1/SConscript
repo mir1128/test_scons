@@ -1,0 +1,1 @@
+Object('module1.cpp', CPPPATH=['../include', '../xlib/include'])

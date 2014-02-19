@@ -1,0 +1,7 @@
+SConscript(['xlib/SConscript',
+            'module1/SConscript',
+            'module2/SConscript',
+            'main/SConscript'])
+
+obj_files = ['main/main.o', 'module1/module1.o', 'module2/module2.o']
+Program('test-main', obj_files, LIBS = ['add', 'sub'], LIBPATH = 'xlib/lib')
